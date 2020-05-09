@@ -2,10 +2,17 @@
 #   Programming Assignment 4
 #     Prob-5.py
 
-# <YOUR NAME>
+# Ilya Panasevich
 
 def main():
-    x = eval(2)
-    print("x:", x)
+    try:
+        x = eval(2)
+        print("x:", x)
+    except TypeError:
+        print("\nTypeError: eval() must be a string. Exiting\n")
+        exit
+    except:
+        print("\nunknown exception. Exiting.\n")
+        exit
 
 main()
